@@ -28,11 +28,13 @@ public class App {
         System.out.print("Testing println, Name: " + name);
 
         System.out.printf("%s is %d years old.", name, age);
+        //%s corresponds to name,and %d corresponds to age respectively
 
         // different ways to print the same content to console terminal
         System.out.printf("\nNice to meet you, %s", name);
 
         System.out.printf("%s is %d years old.", name, age);
+        
 
         String input = con.readLine("What is your hobby?");
         input.trim(); // " swim " --> "swim"
@@ -79,6 +81,23 @@ public class App {
             System.out.println("You are a teen");
         } else {
             System.out.println("you are an adult");
+
         }
-    }
+
+//Slide 21
+Integer i = 0;
+input = con. readLine("Type a phrase:");
+while (i<input.length()){
+    //do/process something here
+    //e.g. Clementi --> BeginIndex = 0
+
+System.out.println(input.substring(0, i));
+
+    ///i = i +1 --> i++
+    i++;
 }
+for (int idx = 0; idx <= input.length(); idx++){
+    System.out.println(input.substring(0, i)); 
+}
+}
+    }
