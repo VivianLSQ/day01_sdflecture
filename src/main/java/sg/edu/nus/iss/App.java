@@ -99,5 +99,16 @@ System.out.println(input.substring(0, i));
 for (int idx = 0; idx <= input.length(); idx++){
     System.out.println(input.substring(0, i)); 
 }
+//Slide 23
+String[] todo = new String[5];
+for(int pos = 0; pos < todo.length; pos++){
+    input = con.readLine("Enter Todo task" + (pos + 1) + ": ");
+    //pos+1 is to insert the first task
+    todo[pos] = input;
 }
+
+    for (int pos = 0; pos <todo.length; pos++){
+        System.out.println("Task " + (pos + 1) + " -->  " + todo[pos]);
     }
+}
+}
